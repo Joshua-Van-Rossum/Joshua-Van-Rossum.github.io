@@ -14,8 +14,8 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 10px 35px; /* Add padding to the header */
-    box-sizing: border-box; /* Ensure padding is included in width calculations */
+    padding: 10px 35px;
+    box-sizing: border-box; 
     margin: 0;
 }
 
@@ -25,15 +25,15 @@ header {
 }
 
 #header p {
-    margin: 0; /* Remove default margin */
-    margin-right: 15px; /* Add some space between the text and links */
+    margin: 0; 
+    margin-right: 15px; 
 }
 
 #header a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1rem; /* Use rem for font size */
+    font-size: 1rem;
     margin-right: 15px;
 }
 
@@ -41,7 +41,7 @@ header {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1rem; /* Use rem for font size */
+    font-size: 1rem; 
 }
 
 .grid-container {
@@ -58,7 +58,7 @@ header {
     border: 6px solid #4a4a4a;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 1rem; /* Use rem for padding */
+    padding: 1rem; 
     display: flex;
 }
 
@@ -71,7 +71,7 @@ header {
 }
 
 .education-section h2 {
-    font-size: 1.75rem; /* Use rem for font size */
+    font-size: 1.75rem; 
     color: #003366;
 }
 
@@ -81,7 +81,7 @@ header {
 }
 
 .education-details {
-    margin-bottom: 0.25rem; /* Use rem for margin */
+    margin-bottom: 0.25rem; 
 }
 
 .education-details span {
@@ -325,3 +325,49 @@ header {
 #backdroptext h2{
     font-size: 2.75em;
 }
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  
+    #experience, #bio, #links, #blogbutton, #skills, #attributes {
+      grid-column: span 1;
+    }
+  
+    .container {
+      flex-direction: column;
+    }
+  
+    #skills {
+      grid-template-columns: 1fr;
+    }
+  
+    .profile-photo {
+      width: 50%;
+      margin: 0 auto 1rem;
+    }
+  
+    #bio {
+      flex-direction: column;
+    }
+  
+    .backdrop {
+      width: 90%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 10px 15px;
+    }
+  
+    .container {
+      padding: 0.5rem;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
