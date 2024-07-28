@@ -1,0 +1,327 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #eeece2;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 35px; /* Add padding to the header */
+    box-sizing: border-box; /* Ensure padding is included in width calculations */
+    margin: 0;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+}
+
+#header p {
+    margin: 0; /* Remove default margin */
+    margin-right: 15px; /* Add some space between the text and links */
+}
+
+#header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem; /* Use rem for font size */
+    margin-right: 15px;
+}
+
+#headlink a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem; /* Use rem for font size */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    margin: 5px;
+    margin-top: 20px;
+}
+
+.container {
+    background-color: #eeece2;
+    border: 6px solid #4a4a4a;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem; /* Use rem for padding */
+    display: flex;
+}
+
+#experience {
+    grid-column: span 4;
+    grid-row: span 28;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.education-section h2 {
+    font-size: 1.75rem; /* Use rem for font size */
+    color: #003366;
+}
+
+.education-section h3 {
+    font-size: 1.5rem;
+    color: #a57b5b;
+}
+
+.education-details {
+    margin-bottom: 0.25rem; /* Use rem for margin */
+}
+
+.education-details span {
+    display: block;
+}
+
+.education-details ul {
+    list-style-type: disc;
+    padding-left: 1.25rem; 
+}
+
+.sect h2 {
+    font-size: 1.75rem;
+    color: #003366;
+}
+
+.sect h3 {
+    font-size: 1.5rem;
+    color: #a57b5b;
+}
+
+.details {
+    margin-bottom: 0.625rem;
+}
+
+.details span {
+    display: block;
+}
+
+.details ul {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+}
+
+#bio {
+    grid-column: span 8;
+    grid-row: span 8;
+    background-color: #4a4a4a;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+#biotext {
+    color: rgb(250, 250, 250);
+    font-size: 1rem;
+}
+
+.profile-photo {
+    width: 18.5vw;
+    height: auto;
+    border: 2px solid rgb(250, 250, 250);
+    border-radius: 50%;
+    margin-right: 0.8rem;
+}
+
+#links {
+    grid-column: span 5;
+    grid-row: span 6;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-info {
+    margin: 0 auto;
+}
+
+.contact-info h2 {
+    font-size: 1.5rem;
+    color: #003366;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    margin: 0.625rem 0;
+}
+
+.contact-info a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+#blogbutton {
+    grid-column: span 3;
+    grid-row: span 6;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#blogbutton h2 {
+    font-size: 1.75rem;
+    color: #003366;
+}
+
+#blogbutton p {
+    font-size: 1rem;
+}
+
+#skills {
+    grid-column: span 8;
+    grid-row: span 10;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0.3125rem;
+}
+
+.skill {
+    grid-column: span 1;
+    grid-row: span 1;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.info-button {
+    width: 1.875rem;
+    height: 1.875rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-size: 1.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #003366;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.skill h4 {
+    font-size: 1.375rem;
+}
+
+#explanation {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#attributes {
+    grid-column: span 8;
+    grid-row: span 4;
+    background-color: #4a4a4a;
+    content: center;
+    font-size: 1rem;
+    padding: 0;
+}
+
+#attributes p {
+    color: rgb(250, 250, 250);
+    margin: auto;
+}
+
+#attributes a {
+    color: #1a73e8;
+}
+
+#foot {
+    text-align: center;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.popup-content h2 {
+    margin-top: 0;
+}
+
+.close-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background: #0056b3;
+}
+
+.page {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.backdrop{
+    width: 60%;
+    background-color: #4a4a4a;
+    min-height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+#backdroptext{
+    color: white;
+    margin: 20px;
+}
+
+#backdroptext h2{
+    font-size: 2.75em;
+}
