@@ -328,6 +328,7 @@ header {
 
 @media screen and (max-width: 768px) {
     .grid-container {
+      margin-top: 30px;
       grid-template-columns: 1fr;
     }
   
@@ -371,3 +372,18 @@ header {
     max-width: 100%;
     height: auto;
   }
+  
+  .mobile-only {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-only {
+        display: block;
+        background-color: #ffcc00;
+        color: #000;
+        text-align: center;
+        padding: 10px;
+        font-weight: bold;
+    }
+}
