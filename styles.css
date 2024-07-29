@@ -326,6 +326,12 @@ header {
     font-size: 2.75em;
 }
 
+.article{
+    background-color: whitesmoke;
+    max-width: 90%;
+    max-height:90%;
+}
+
 @media screen and (max-width: 768px) {
     .grid-container {
       margin-top: 30px;
