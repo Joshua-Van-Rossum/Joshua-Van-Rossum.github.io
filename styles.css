@@ -328,8 +328,38 @@ header {
 
 .article{
     background-color: whitesmoke;
+    margin: 2rem;
     max-width: 90%;
     max-height:90%;
+}
+
+.article h2{
+    font-size: 1.6rem;
+    color:black;
+    font-style:bold;
+    padding: .5rem;
+}
+
+.article h4{
+    font-size: 1.1rem;
+    padding: 1rem;
+    color:#4a4a4a
+}
+
+#eulerprojects p{
+    padding: 1rem;
+    font-size: 1.25rem;
+}
+
+#eulerlinks{
+    border: 3px solid black;
+    display:flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+}
+#eulerlinks a{
+    padding-left: 1rem;
 }
 
 @media screen and (max-width: 768px) {
