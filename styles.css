@@ -362,6 +362,14 @@ header {
     padding-left: 1rem;
 }
 
+#conwaygif{
+    border: 6px, solid, black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
 @media screen and (max-width: 768px) {
     .grid-container {
       margin-top: 30px;
