@@ -370,6 +370,18 @@ header {
     width: 70%;
 }
 
+#ppimages {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 5px; 
+  }
+  
+  #ppimages img {
+    max-width: 100%; 
+    height: auto;
+  }
+
 @media screen and (max-width: 768px) {
     .grid-container {
       margin-top: 30px;
