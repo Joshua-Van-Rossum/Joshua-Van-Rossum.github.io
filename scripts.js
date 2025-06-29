@@ -1,16 +1,20 @@
 const contents = document.querySelectorAll('.resume-content');
+const graphic_contents = document.querySelectorAll('.graphic-container');
 let currentIndex = 0;
 
 // Initialize: hide all, then show the first visible one (not content0)
 function showContent(index) {
-contents.forEach((el, i) => {
-el.style.display = (i === index) ? 'block' : 'none';
-});
+  contents.forEach((el, i) => {
+    el.style.display = (i === index) ? 'block' : 'none';
+  });
+  graphic_contents.forEach((el, i) => {
+    el.style.display = (i === index) ? 'block' : 'none';
+  });
 }
 
 function nextItem() {
-currentIndex = (currentIndex + 1) % contents.length;
-showContent(currentIndex);
+  currentIndex = (currentIndex + 1) % contents.length;
+  showContent(currentIndex);
 }
 
 function prevItem() {
