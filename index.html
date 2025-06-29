@@ -52,35 +52,88 @@
             <div id="skills" class="container">
                 <div id="explanation_cont" class="container">
                     <div id="explanation" class="container">
-                        <h3>To showcase some of my skills I've tried to implement some fun demonstrations into this website.
-                            Click the arrows below to iterate through them. I am consistently trying to add more. 
-                        </h3>
+                        <svg viewBox="0 0 100 150" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="translate(-25, 00) scale(1.5)">
+                                <!-- Bulb Outline -->
+                                <circle cx="50" cy="40" r="30" fill="none" stroke="black" stroke-width="1.5" />
+
+                                <!-- Bulb Glow -->
+                                <circle cx="50" cy="40" r="30" fill="yellow" opacity="0">
+                                <animate attributeName="opacity" values="0;0.6;0" dur="6s" repeatCount="indefinite" />
+                                </circle>
+
+                                <!-- Filament -->
+                                <line x1="40" y1="40" x2="60" y2="40" stroke="black" stroke-width="1" />
+                                <line x1="50" y1="40" x2="50" y2="60" stroke="black" stroke-width="1" />
+
+                                <!-- Bulb Base -->
+                                <rect x="40" y="70" width="20" height="20" fill="gray" stroke="black" stroke-width="1" />
+                            </g>
+                        </svg>
                     </div>
                     <div id="arrows" class="arrow-container">
                         <button class="arrow left" onclick="prevItem()">&lt;</button>
                         <button class="arrow right" onclick="nextItem()">&gt;</button>
                     </div>
                 </div>
-                <div id="content" class="container">
-                    <h2>Skills / Languages</h2>
-                    <div class="skills-list">
-                        <ul id="skill_1">
-                            <li><h3>Java</h3></li>
-                            <li><h3>Python</h3></li>
-                            <li><h3>R</h3></li>
-                            <li><h3>SQL</h3></li>
-                        </ul>
-                        <ul id="skill_2">
-                            <li><h3>Machine Learning Techniques</h3></li>
-                            <li><h3>Data Mining</h3></li>
-                            <li><h3>Microsoft Apps / Power Platform</h3></li>
-                            <li><h3>Data Visualization</h3></li>
-                        </ul>
-                    </div>
+                <div id="content"  class="resume-content">
+                    <h2>Werner Electric Supply</h2>
+                    <h3>Business Intelligence Intern</h3>
+                    <h5>May 2024 - August 2024 &emsp;&emsp;&emsp; Appleton, Wi</h5>
+                    <ul>
+                        <li>Worked with the IT team performing administrative duties within the warehouse management system</li>
+                        <li>Conducted data validation and integrity checks across databases using SQL</li>
+                        <li>Collaborated with teams across the company to develop solutions for day-to-day challenges</li>
+                        <li>Developed a Microsoft PowerApp and associated Power Automate Flows to easily capture images of inventory and upload to customer</li>
+                        <li>Streamlined the existing process, improving time per photo from 4.5 minutes to around 30 seconds</li>
+                    </ul>
+                </div> 
+                <div id="content1"  class="resume-content">
+                    <h2>Caterpillar Inc.</h2>
+                    <h3>Digital and Analytics Intern</h3>
+                    <h5>May 2025 - Current &emsp;&emsp;&emsp; Peoria, Il</h5>
+                    <ul>
+                        <li>Developing Microsoft Power Apps application to track Issue deadlines, status, escalation and progress. </li>
+                        <li>Creating an automated emailing system to notify and connect teams across the company using Power Automate</li>
+                        <li>Creating data visualizations to showcase current issues and their statis / progress.</li>
+                    </ul>
                 </div>                
             </div>
             
         </div>
+        <div id="explanation1" class="container">
+                        <svg viewBox="0 0 100 150" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="translate(-25, 00) scale(1.5)">
+
+                                <rect x="45" y="69" width="17" height="5"  transform="rotate(-50, 45, 69)" fill="yellow" stroke="black" stroke-width="0.125"/>
+        
+
+                                <rect x="30" y="58" width="12" height="10" fill="lightgray" fill-opacity="0.3" stroke="yellow" stroke-width="1.2"/>
+                                <rect x="25" y="68" width="26" height="8" fill="yellow" stroke="black" stroke-width="0.125"/>
+                                <ellipse cx="42" cy="80" rx="19" ry="6" fill=#8B8000 stroke="black" stroke-width="1.25" />
+
+                                
+                                <circle cx="30" cy="80" r="5" fill="gray" stroke="black" stroke-width="0.5" />
+                                <circle cx="42" cy="80" r="5" fill="gray" stroke="black" stroke-width="0.5" />
+                                <circle cx="54" cy="80" r="5" fill="gray" stroke="black" stroke-width="0.5" />
+                                
+                                
+                                
+                                <!-- Bulb Glow 
+                                <circle cx="50" cy="40" r="30" fill="yellow" opacity="0">
+                                <animate attributeName="opacity" values="0;0.6;0" dur="6s" repeatCount="indefinite" />
+                                </circle>
+
+                                 Filament 
+                                <line x1="40" y1="40" x2="60" y2="40" stroke="black" stroke-width="1" />
+                                <line x1="50" y1="40" x2="50" y2="60" stroke="black" stroke-width="1" />
+
+                                 Bulb Base 
+                                <rect x="40" y="70" width="20" height="20" fill="gray" stroke="black" stroke-width="1" />
+                            -->
+                            </g>
+                        </svg>
+                    </div>
     </main>
 
     <!--<footer id="foot">
