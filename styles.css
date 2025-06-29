@@ -221,5 +221,69 @@ header {
     display: none;
 }
 
+.math-text {
+    fill: #0f0;
+    font-size: 10px;
+    font-family: monospace;
+    opacity: 0;
+}
 
+.step1 { animation: show-step 15s infinite; animation-delay: 0.5s; }
+.step2 { animation: show-step 15s infinite; animation-delay: 1.5s; }
+.step3 { animation: show-step 15s infinite; animation-delay: 2.5s; }
+.step4 { animation: show-step 15s infinite; animation-delay: 3.5s; }
+.step5 { animation: show-step 15s infinite; animation-delay: 4.5s; }
+.step6 { animation: show-step 15s infinite; animation-delay: 5.5s; }
+.step7 { animation: show-step 15s infinite; animation-delay: 6.5s; animation-duration: 15s; }
+
+@keyframes show-step {
+    0% { opacity: 0; }
+    2% { opacity: 1; }
+    14% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* Special keyframes for the final result */
+.step7 {
+    animation-name: show-result;
+}
+
+@keyframes show-result {
+    0% { opacity: 0; }
+    2% { opacity: 0; }
+    4% { opacity: 1; }
+    24% { opacity: 1; }
+    24.1% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+@media (max-width: 768px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 10px;
+    }
+
+    .container {
+        flex-direction: column; /* Stack content inside container */
+        width: 100%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #header p, 
+    #header a {
+        margin: 5px 0;
+    }
+}
 
