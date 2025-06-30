@@ -228,34 +228,32 @@ header {
     opacity: 0;
 }
 
-.step1 { animation: show-step 15s infinite; animation-delay: 0.5s; }
-.step2 { animation: show-step 15s infinite; animation-delay: 1.5s; }
-.step3 { animation: show-step 15s infinite; animation-delay: 2.5s; }
-.step4 { animation: show-step 15s infinite; animation-delay: 3.5s; }
-.step5 { animation: show-step 15s infinite; animation-delay: 4.5s; }
-.step6 { animation: show-step 15s infinite; animation-delay: 5.5s; }
-.step7 { animation: show-step 15s infinite; animation-delay: 6.5s; animation-duration: 15s; }
+.step1 { animation: show-step 15s infinite; animation-delay: 0s; }
+.step2 { animation: show-step 15s infinite; animation-delay: 2.1s; }
+.step3 { animation: show-step 15s infinite; animation-delay: 4.2s; }
+.step4 { animation: show-step 15s infinite; animation-delay: 6.3s; }
+.step5 { animation: show-step 15s infinite; animation-delay: 8.4s; }
+.step6 { animation: show-step 15s infinite; animation-delay: 10.5s; }
+.step7 { animation: show-result 15s infinite; animation-delay: 12.6s; }
 
+/* General keyframe: fade in, show, fade out */
 @keyframes show-step {
-    0% { opacity: 0; }
-    2% { opacity: 1; }
-    14.1% { opacity: 0; }
+    0%   { opacity: 0; }
+    5%   { opacity: 1; }
+    15%  { opacity: 1; }
+    20%  { opacity: 0; }
     100% { opacity: 0; }
 }
 
-/* Special keyframes for the final result */
-.step7 {
-    animation-name: show-result;
-}
-
+/* Final step with slightly different visibility timing */
 @keyframes show-result {
-    0% { opacity: 0; }
-    2% { opacity: 0; }
-    4% { opacity: 1; }
-    24% { opacity: 1; }
-    24.1% { opacity: 0; }
+    0%   { opacity: 0; }
+    5%   { opacity: 1; }
+    20%  { opacity: 1; }
+    25%  { opacity: 0; }
     100% { opacity: 0; }
 }
+
 
 
 @media (max-width: 768px) {
