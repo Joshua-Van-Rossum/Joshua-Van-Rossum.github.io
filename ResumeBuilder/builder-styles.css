@@ -263,3 +263,14 @@ main {
     cursor: pointer;
     border-radius: 12px;
 }
+
+#resume {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  color: black;
+}
+
+.contact-info i {
+    color: black;
+}
