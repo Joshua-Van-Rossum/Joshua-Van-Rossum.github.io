@@ -30,7 +30,8 @@ const skills = [
   "SQL",
   "Java",
   "AWS",
-  "Snowflake"
+  "Snowflake",
+  "Hadoop/Spark"
 ];
 
 // Grab elements
